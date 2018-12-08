@@ -1,13 +1,13 @@
 <section class="sum__input">
   <p>Сумма</p>
-  <input type="text" placeholder="от 1 000 до {{75000 | currency:'RUB':'symbol-narrow'}}" required>
+  <input type="text" placeholder="от 1 000 до 75000 &#8381;" pattern="(^[1-9]\d{3}$)|(^[1-6]\d{4}$)|(^7[0-4]\d{3}$)|(^75000$)" required>
 </section>
 <section class="sum__input">
   <p>Комментарий</p>
-  <input type="text" placeholder="До 150 символов" required>
+  <input type="text" placeholder="До 150 символов" pattern=".{1,150}">
 </section>
 <section class="sum__input">
   <p>Ваша эл. почта</p>
-  <input type="text" placeholder="Для квитанций об оплате" required>
+  <input type="email" placeholder="Для квитанций об оплате" required>
 </section>
 <button><span></span>Заплатить</button>

@@ -1,4 +1,4 @@
-<section class="pay">
+<form class="pay" name="pay">
     <section class="pay__nav">
         <p>Заплатить</p>
         <a routerLink="/request-payment">Запросить платеж</a>
@@ -14,24 +14,24 @@
 
         <section class="input-line">
             <p>От кого</p>
-            <input type="text" placeholder="ИНН или название платильщика">
+            <input type="text" placeholder="ИНН или название платильщика" id="input-from" pattern="(^\d{10}$)|(^\d{12}$)" required>
         </section>
 
         <section class="input-line not-bottom-line">
             <p>БИК</p>
-            <input type="text">
+            <input type="text" id="input-bik" pattern="^\d{9}$" required>
         </section>
 
         <section class="input-line">
             <p>Номер счета</p>
-            <input type="text">
+            <input type="text" id="input-score" pattern="^\d{20}$" required>
         </section>
 
         <section class="input-line">
             <p>За что</p>
             <section class="purpose-payment">
                 <span>Назначение платежа</span>
-                <input type="text" value="без НДС">
+                <input type="text" value="без НДС" id="input-purpose-payment" pattern="(^без НДС$)|(^НДС 18%$)/(^НДС 10%$)" required>
                 <section class="vat">
                     <a href="#">НДС 18%</a>
                     <a href="#">НДС 10%</a>
@@ -42,10 +42,10 @@
 
         <section class="input-line">
             <p>Сколько</p>
-            <input type="text">
+            <input type="text" id="input-how-much" pattern="(^[1-9]\d{3}$)|(^[1-6]\d{4}$)|(^7[0-4]\d{3}$)|(^75000$)" required>
         </section>
 
         <button><span></span>Получить файл для интернет-банка</button>
         <a href="#">Очистить форму</a>
     </section>
-</section>
+</form>

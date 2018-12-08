@@ -4,7 +4,7 @@
         <p>Запросить платеж</p>
     </section>
 
-    <section class="pay__information">
+    <form class="pay__information">
         <p>
             Создайте платежку, а Индивидуальный предприниматель {{client.fullName.surname}} {{client.fullName.name}}
             {{client.fullName.patronymic}} подпишет ее у себя в интернет-банке
@@ -12,24 +12,24 @@
 
         <section class="input-line not-bottom-line">
             <p>От кого</p>
-            <input type="text" placeholder="ИНН или название платильщика">
+            <input type="text" placeholder="ИНН или название платильщика" id="input-inn"  pattern="(^\d{10}$)|(^\d{12}$)" required>
         </section>
 
         <section class="input-line">
             <p>БИК</p>
-            <input type="text">
+            <input type="text" id="input-request-bik" pattern="^\d{9}$" required>
         </section>
 
         <section class="input-line">
             <p>Номер счета</p>
-            <input type="text">
+            <input type="text" id="input-request-score" pattern="^\d{20}$" required>
         </section>
 
         <section class="input-line not-bottom-line">
             <p>За что</p>
             <section class="purpose-payment">
                 <span>Назначение платежа</span>
-                <input type="text" value="без НДС">
+                <input type="text" value="без НДС" id="input-request-nds" pattern="(^без НДС$)|(^НДС 18%$)/(^НДС 10%$)" required>
                 <section class="vat">
                     <a href="#">НДС 18%</a>
                     <a href="#">НДС 10%</a>
@@ -40,23 +40,23 @@
 
         <section class="input-line">
             <p>Сколько</p>
-            <input type="text">
+            <input type="text" id="input-request-how-much" pattern="(^[1-9]\d{3}$)|(^[1-6]\d{4}$)|(^7[0-4]\d{3}$)|(^75000$)" required>
         </section>
 
         <section class="input-line not-bottom-line">
             <p>Номер телефона</p>
             <section class="phone">
-                <input type="text" placeholder="+7">
+                <input type="text" placeholder="+7" id="input-phone" pattern="^+7 \d{3} \d{3}-\d{2}-\d{2}$" required>
                 <a href="#">Оставляя телефон, вы соглашаетесь на обработку персональных данных</a>
             </section>
         </section>
 
         <section class="input-line not-bottom-line">
             <p>Эл.почта</p>
-            <input type="text" placeholder="Для уведомлений об оплате">
+            <input type="email" placeholder="Для уведомлений об оплате">
         </section>
 
         <button><span></span>Создать платеж</button>
         <a href="#">Очистить форму</a>
-    </section>
+    </form>
 </section>
