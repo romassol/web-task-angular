@@ -1,0 +1,36 @@
+.text
+{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.name
+{
+  font-size: 140%;
+  font-weight: bold;
+}
+
+.contacts
+{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.number
+{
+  margin: 0;
+  color: #797977;
+}
+
+.logo
+{
+  width: auto;
+}
+
+a
+{
+  color: #4e7cb6;
+  text-decoration: none;
+}

@@ -1,0 +1,15 @@
+<section class="text">
+  <p class="name">
+    Индивидуальный предприниматель {{client.fullName.surname}} {{client.fullName.name}}
+    {{client.fullName.patronymic}}
+  </p>
+  <section class="contacts">
+    <p class="number">{{client.phone}}</p>
+    <a href={{client.website}} class="site">{{client.website}}</a>
+    <a href={{client.email}} class="email">{{client.email}}</a>
+  </section>
+  <a href={{client.companyInformationLink}} class="about">Информация о компании</a>
+  <a href={{client.requisitesLink}} class="requisites">Показать реквизиты</a>
+</section>
+
+<img class="logo" src={{client.pathToLogo}} alt="logo">

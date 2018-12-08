@@ -1,0 +1,165 @@
+p
+{
+  margin: 0;
+}
+
+a
+{
+  color: #4e7cb6;
+  text-decoration: none;
+}
+
+.pay__nav
+{
+  display: flex;
+  margin-bottom: 2%;
+  font-size: 21px;
+  width: 35%;
+  justify-content: space-between;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.pay__way
+{
+  display: flex;
+  margin-bottom: 2%;
+  width: 42%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pay__way a
+{
+  padding-top: 8px;
+}
+
+.pay__way_boxed
+{
+  background-color: #f3f3f3;
+  border: solid #f3f3f3 8px;
+}
+
+.pay__information
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.pay__information > p
+{
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+
+.pay__information input
+{
+  border: none;
+  border-bottom: solid #dcdcdc 2px;
+  background-color: white;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 9%;
+  font-size: 15px;
+}
+
+.pay__information input::-webkit-input-placeholder {
+  color: #c8c8c8;
+}
+
+.pay__information input::-moz-placeholder {
+  color: #c8c8c8;
+}
+
+.purpose-payment
+{
+  display: flex;
+  flex-direction: column;
+  width: 58%;
+}
+
+.purpose-payment input
+{
+  border-color: #91d97e;
+}
+
+.purpose-payment span
+{
+  font-size: 13px;
+  color: #dcdcdc;
+  margin-top: -20px;
+}
+
+.vat
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 15px;
+}
+
+.purpose-payment .vat p
+{
+  padding-top: 3px;
+  color: black;
+}
+
+.pay__information button
+{
+  height: 20%;
+  width: 20%;
+  position: relative;
+}
+
+.pay__information button span
+{
+  position: absolute;
+  top: -15%;
+  left: -15%;
+  bottom: -15%;
+  right: -15%;
+  background: url("../../assets/img/button.png");
+  background-size: 100% 100%;
+}
+
+.pay__information a
+{
+  font-weight: bold;
+  padding-top: 2%;
+}
+
+.pay__information .not-bottom-line input
+{
+  border: none;
+}
+
+.input-line
+{
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.input-line p
+{
+  color: #b2aca6;
+}
+
+.pay
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  width: 65%;
+}
+
+@media screen and (max-width: 768px)
+{
+  .pay__information
+  {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+  }
+}

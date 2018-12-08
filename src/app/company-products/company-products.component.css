@@ -1,0 +1,22 @@
+.company-products__gallery
+{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.company-products__name
+{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+app-product
+{
+  border: solid #f6f6f6 1px;
+  width: 210px;
+  padding: 2% 2% 10%;
+  flex-wrap: wrap;
+  margin-top: 1%;
+}

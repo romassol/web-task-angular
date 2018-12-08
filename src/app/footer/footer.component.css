@@ -1,0 +1,8 @@
+app-link
+{
+  display: inline-block;
+  background-color: #ececec;
+  margin-right: 1%;
+  border: solid #ececec 7px;
+  border-radius: 10px;
+}

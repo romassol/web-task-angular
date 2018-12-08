@@ -1,0 +1,54 @@
+main
+{
+  display: flex;
+  flex-direction: column;
+}
+
+a
+{
+  color: #4e7cb6;
+  text-decoration: none;
+}
+
+app-client
+{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+
+.line
+{
+  padding-top: 2%;
+  margin: auto;
+  width: 65%;
+}
+
+app-company-products
+{
+  margin: auto;
+  width: 65%;
+}
+
+app-addition-information
+{
+  margin: auto;
+  width: 65%;
+  padding-top: 2%;
+}
+
+footer
+{
+  margin: auto;
+  padding-top: 1%;
+  width: 65%;
+}
+
+@media screen and (max-width: 768px)
+{
+  app-client
+  {
+    flex-direction: column;
+  }
+}

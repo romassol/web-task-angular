@@ -1,0 +1,51 @@
+<section class="pay">
+    <section class="pay__nav">
+        <p>Заплатить</p>
+        <a routerLink="/request-payment">Запросить платеж</a>
+    </section>
+
+    <section class="pay__way">
+        <a routerLink="">С карты любого банка</a>
+        <p class="pay__way_boxed">Из своего интернет-банка</p>
+    </section>
+
+    <section class="pay__information">
+        <p>Сформируйте платежку и загрузите ее в свой банк для подписи</p>
+
+        <section class="input-line">
+            <p>От кого</p>
+            <input type="text" placeholder="ИНН или название платильщика">
+        </section>
+
+        <section class="input-line not-bottom-line">
+            <p>БИК</p>
+            <input type="text">
+        </section>
+
+        <section class="input-line">
+            <p>Номер счета</p>
+            <input type="text">
+        </section>
+
+        <section class="input-line">
+            <p>За что</p>
+            <section class="purpose-payment">
+                <span>Назначение платежа</span>
+                <input type="text" value="без НДС">
+                <section class="vat">
+                    <a href="#">НДС 18%</a>
+                    <a href="#">НДС 10%</a>
+                    <p>Без НДС</p>
+                </section>
+            </section>
+        </section>
+
+        <section class="input-line">
+            <p>Сколько</p>
+            <input type="text">
+        </section>
+
+        <button><span></span>Получить файл для интернет-банка</button>
+        <a href="#">Очистить форму</a>
+    </section>
+</section>

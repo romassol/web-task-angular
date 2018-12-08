@@ -1,0 +1,10 @@
+img
+{
+  display: block;
+  margin: auto;
+}
+
+.product__name
+{
+  font-weight: bold;
+}

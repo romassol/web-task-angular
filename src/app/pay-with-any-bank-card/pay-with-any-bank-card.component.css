@@ -1,0 +1,100 @@
+app-card
+{
+  display: block;
+  background-color: #f7f7f7;
+  border: solid #f7f7f7 10px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+p
+{
+  margin: 0;
+}
+
+app-sum
+{
+  margin-left: 5%;
+  width: 35%;
+}
+
+.pay__information
+{
+  display: flex;
+}
+
+.pay__information input
+{
+  border: none;
+  border-bottom: solid #dcdcdc 2px;
+  background-color: #f7f7f7;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 9%;
+  font-size: 15px;
+}
+
+.pay__information input::-webkit-input-placeholder {
+  color: #c8c8c8;
+}
+
+.pay__information input::-moz-placeholder {
+  color: #c8c8c8;
+}
+
+.pay__nav
+{
+  display: flex;
+  margin-bottom: 2%;
+  font-size: 21px;
+  width: 35%;
+  justify-content: space-between;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.pay__way
+{
+  display: flex;
+  margin-bottom: 2%;
+  width: 42%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pay__way a
+{
+  padding-top: 8px;
+}
+
+.pay__way_boxed
+{
+  background-color: #f3f3f3;
+  border: solid #f3f3f3 8px;
+}
+
+a
+{
+  color: #4e7cb6;
+  text-decoration: none;
+}
+
+.pay
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  width: 65%;
+}
+
+@media screen and (max-width: 768px)
+{
+  .pay__information
+  {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+  }
+}

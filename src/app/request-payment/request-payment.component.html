@@ -1,0 +1,62 @@
+<section class="pay">
+    <section class="pay__nav">
+        <a routerLink="">Заплатить</a>
+        <p>Запросить платеж</p>
+    </section>
+
+    <section class="pay__information">
+        <p>
+            Создайте платежку, а Индивидуальный предприниматель {{client.fullName.surname}} {{client.fullName.name}}
+            {{client.fullName.patronymic}} подпишет ее у себя в интернет-банке
+        </p>
+
+        <section class="input-line not-bottom-line">
+            <p>От кого</p>
+            <input type="text" placeholder="ИНН или название платильщика">
+        </section>
+
+        <section class="input-line">
+            <p>БИК</p>
+            <input type="text">
+        </section>
+
+        <section class="input-line">
+            <p>Номер счета</p>
+            <input type="text">
+        </section>
+
+        <section class="input-line not-bottom-line">
+            <p>За что</p>
+            <section class="purpose-payment">
+                <span>Назначение платежа</span>
+                <input type="text" value="без НДС">
+                <section class="vat">
+                    <a href="#">НДС 18%</a>
+                    <a href="#">НДС 10%</a>
+                    <p>Без НДС</p>
+                </section>
+            </section>
+        </section>
+
+        <section class="input-line">
+            <p>Сколько</p>
+            <input type="text">
+        </section>
+
+        <section class="input-line not-bottom-line">
+            <p>Номер телефона</p>
+            <section class="phone">
+                <input type="text" placeholder="+7">
+                <a href="#">Оставляя телефон, вы соглашаетесь на обработку персональных данных</a>
+            </section>
+        </section>
+
+        <section class="input-line not-bottom-line">
+            <p>Эл.почта</p>
+            <input type="text" placeholder="Для уведомлений об оплате">
+        </section>
+
+        <button><span></span>Создать платеж</button>
+        <a href="#">Очистить форму</a>
+    </section>
+</section>

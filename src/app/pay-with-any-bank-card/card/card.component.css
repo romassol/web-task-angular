@@ -1,0 +1,51 @@
+.pay__systems
+{
+  width: 40%;
+}
+
+img
+{
+  display: block;
+  margin-left: auto;
+}
+
+.card__number
+{
+  width: 80%;
+}
+
+.card__date-and-cvc input
+{
+  display: inline-block;
+  width: 20%;
+}
+
+.card__cvc
+{
+  margin-left: 3%;
+}
+
+input
+{
+  border: none;
+  border-bottom: solid #dcdcdc 2px;
+  background-color: #f7f7f7;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 9%;
+  font-size: 15px;
+}
+
+input::-webkit-input-placeholder {
+  color: #c8c8c8;
+}
+
+input::-moz-placeholder {
+  color: #c8c8c8;
+}
+
+a
+{
+  color: #4e7cb6;
+  text-decoration: none;
+}

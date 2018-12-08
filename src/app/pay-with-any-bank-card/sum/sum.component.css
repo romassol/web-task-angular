@@ -1,0 +1,65 @@
+.sum__input
+{
+  display: flex;
+  justify-content: space-between;
+  width: 110%;
+}
+
+p
+{
+  margin: 0;
+  font-weight: bold;
+}
+
+input
+{
+  background-color: white;
+}
+
+.sum__input:first-child > input
+{
+  border: none;
+}
+
+button
+{
+  height: 20%;
+  position: relative;
+}
+
+span
+{
+  position: absolute;
+
+  top: -30%;
+  left: -20%;
+  bottom: -30%;
+  right: -20%;
+  background: url("../../../assets/img/button.png");
+  background-size: 100% 100%;
+}
+
+input
+{
+  border: none;
+  border-bottom: solid #dcdcdc 2px;
+  background-color: #f7f7f7;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 9%;
+  font-size: 15px;
+}
+
+input::-webkit-input-placeholder {
+  color: #c8c8c8;
+}
+
+input::-moz-placeholder {
+  color: #c8c8c8;
+}
+
+a
+{
+  color: #4e7cb6;
+  text-decoration: none;
+}
